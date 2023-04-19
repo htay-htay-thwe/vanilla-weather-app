@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanilla Weather app</title>
 </head>
+<link rel="stylesheet" href="src/styles.css">
 <body>
+    <header>
     <h1>
         New York
-     <ul>
+     <ul class="firstList">
         <li>
             Last updated : Wednesday 07:38
         </li>
@@ -19,13 +21,21 @@
     </h1>
     <h2>
         <div>
-            <span>🌞</span>
-            <span>21</span>
-            <span>°C/°F</span>
+            <span class="sun">🌞</span>
+            <span class="number">21</span>
+            <span class="degree">°C/°F</span>
     </h2>
-    <h3>
+    <ul class="secondList">
+        <li>
         Humidity : 48% 
+    </li>
+    <li>
         Wind : 35 Km/h
-    </h3>
+        </li>
+        </ul>
+        </header>
+    <footer>
+        open-source code,by Htay Htay Thwe
+    </footer>
 </body>
 </html>
