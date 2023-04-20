@@ -54,4 +54,21 @@ let searching=document.querySelector("#search");
 searching.addEventListener("click",showPosition);
 let celsiusTemperature = null;
 
+function displayTemperatureFahrenheit(event){
+    event.preventDefault();
+    let fahrenheitDegree=document.querySelector("#temperatureNumber");
+    fahrenheitDegree.innerHTML=Math.round((celsiusTemperature * 9) / 5 + 32);
+}
+let fahrenheitTemperature=document.querySelector("#degreeChange");
+fahrenheitTemperature.addEventListener("click",displayTemperatureFahrenheit);
+
+
+function displayTemperatureCelsius(event){
+    event.preventDefault();
+    let celsiusDegree=document.querySelector("#temperatureNumber");
+    celsiusDegree.innerHTML=Math.round(celsiusTemperature);
+}
+
+let celsiusTemperatureChange=document.querySelector("#celsi");
+celsiusTemperatureChange.addEventListener("click",displayTemperatureCelsius)
 search("New York");
